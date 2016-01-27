@@ -22,11 +22,10 @@ public class PoliticoLoco {
 	static int numeroMaximo=respuestas.length;
 	//Esta función devolverá una rrespuesta aleatoria de nuestro político loco
 	public static String devolverRespuesta(){
-		int numeroDentroDelArray = rn.nextInt(numeroMaximo - numeroMinimo + 1) + numeroMinimo;
+		int numeroDentroDelArray = rn.nextInt(numeroMaximo);
 		
 		return respuestas[numeroDentroDelArray];
 	}
-
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in); // Creamos un objeto de la clase Scanner
 		System.out.println("--------------------------------");
